@@ -11,7 +11,7 @@ os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
 @app.route('/')
 def index():
-    return send_from_directory('.', 'Dumb.html')
+    return send_from_directory('.', 'Index.html')
 
 @app.route('/upload', methods=['POST'])
 def upload_file():
